@@ -1,0 +1,306 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.clear {
+    clear:both;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.text-white {
+    color:white !important;
+}
+#main{
+
+}
+#header{
+    height: 46px;
+    background-color:black;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1;
+}
+#nav {
+display: inline-block;
+}
+#nav >li {
+    display: inline-block;
+}
+#nav, .subnav {
+    list-style-type: none ;
+}
+#nav li{
+    position: relative;
+}
+#nav>li>a {
+    color: white;
+}
+#nav li a {
+    text-decoration: none;
+    line-height:46px;
+    padding: 0 24px;
+    display: block;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav .subnav li:hover,
+#nav>li:hover>a {
+    color:black;
+    background-color:lightgrey;
+}
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#nav .subnav a{
+color:black;
+
+}
+
+#slider {
+    margin-top:46px;
+    padding-top:55%;
+    background:url('https://billboardvn.vn/wp-content/uploads/2019/11/ngot-TN.jpg') top center/ cover no-repeat;
+    position: relative;
+}
+#slider .text-content {
+    position:absolute;
+    bottom:47px;
+    color:white;
+    width:100%;
+    text-align: center;
+}
+#slider .text-heading {
+    font-weight:500;
+    font-size:24px;
+}
+#slider .text-des{
+    font-size:18px;
+    margin-top:25px;
+}
+#content {
+
+}
+#content .content-section {
+    width:800px;
+    margin:auto;
+    padding: 64px 0;
+}
+#content .section-heading {
+    font-size:30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+#content .section-sub-heading {
+    text-align: center;
+    font-size:15px;
+    margin-top:25px;
+    font-style: italic;
+    opacity: 0.7;
+}
+#content .about-content {
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .member-item {
+    float:left;
+    width:calc(100%/4);
+    text-align: center;
+}
+#content .member-list {
+    margin-top: 48px;
+    overflow: hidden;
+}
+#content .member-name {
+    font-size:15px;
+   
+}
+#content .member-img {
+    margin-top:15px;
+    width:154px;
+    border-radius: 50%;
+}
+.tour-section {
+    background-color: black;
+}
+#footer {
+
+}
+.ti-angle-double-down  {
+    font-size:12px;
+}
+#header .ti-search {
+    color:white;
+    font-size:20px;
+    line-height:46px;
+}
+#header .search-btn {
+    float:right;
+    padding:0 21px;   
+}
+
+#header .search-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+.ticket-list {
+    background-color: white;
+    margin-top: 40px;
+    list-style-type: none;
+}
+.ticket-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color:#757575;
+}
+.ticket-list .sold-out {
+    background-color: red;
+    color:white;
+    padding: 2px 5px;
+    margin-left: 16px;
+
+}
+.ticket-list .quantity{
+    background-color: orangered;
+    border-radius: 50%;
+    float: right;
+    width:24px;
+    height:24px;
+    color:white;
+    text-align: center;
+    line-height: 24px;
+    margin-top:-4px;
+}
+.places-list {
+    margin-top:32px;
+    margin-left: -8px;
+    margin-right:-8px;
+}
+.places-item {
+    float:left;
+    width:33.333%;
+    padding: 0 8px;
+ 
+}
+.places-item img {
+    width:100%;
+    display: block;
+}
+.places-item img:hover {
+    opacity: 0.7;
+}
+.place-content {
+    background-color: white;
+    padding: 16px;
+    font-size: 15px;
+}
+.place-time {
+    margin-top: 16px;
+    color:#757575; 
+}
+
+.place-des {
+    margin-top: 16px;
+}
+.buy-btn {
+    text-decoration: none;
+    color:white;
+    background-color: black;
+    display:inline-block;
+    padding: 11px 16px;
+    margin-top: 15px;
+}
+.buy-btn:hover {
+    background-color: lightgrey;
+    color:black;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half {
+    width:50%;
+}
+.col-full {
+    width: 100%;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.contact-content {
+    margin-top: 48px;
+}
+.contact-info i {
+    width:30px;
+}
+.contact-info {
+    line-height: 1.5;
+    font-size: 18px;
+}
+.contact-form {
+    font-size:15px;
+}
+.contact-form .form-control {
+    padding: 5px;
+    border: 1px solid #ddd;
+    width: 100%;;
+} 
+.row::after {
+    clear: both;
+    display:block;
+    content: "";
+}
+.mt-8 {
+    margin-top: 8px !important;
+}
+.mt-16 {
+    margin-top: 16px !important;
+}
+.form-submit-btn {
+    background-color: black;
+    color:white;
+    border:none;
+    padding: 9px 18px;
+    margin: 16px 0;
+    float:right;
+    font-size: 15px;
+}
+.form-submit-btn:hover {
+    background-color: lightgrey;
+    color:black;
+    cursor: pointer;
+}
+.map-section img {
+    width:100%;
+}
+#footer {
+    padding: 64px 16px;
+    text-align:center;
+}
+#footer .social {
+    font-size: 24px;
+}
+#footer .social a {
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+#footer .social a:hover {
+    color: rgba(0,0,0,0.3);
+}
+.ending {
+    margin-top: 15px;
+    color: rgba(0,0,0,0.6);
+}
